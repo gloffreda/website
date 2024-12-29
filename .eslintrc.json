@@ -1,0 +1,209 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "printWidth": 110,
+        "useTabs": false,
+        "semi": true,
+        "trailingComma": "all"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "react/react-in-jsx-scope": "off",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "trailingUnderscore": "allow",
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "enum",
+        "format": [
+          "PascalCase"
+        ],
+        "trailingUnderscore": "allow",
+        "custom": {
+          "regex": "^E[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "enumMember",
+        "format": [
+          "UPPER_CASE"
+        ],
+        "trailingUnderscore": "allow",
+        "custom": {
+          "regex": "^[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "typeAlias",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^T[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "typeParameter",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "typeProperty",
+        "format": [
+          "camelCase"
+        ]
+      },
+      {
+        "selector": "function",
+        "format": [
+          "camelCase",
+          "PascalCase"
+        ],
+        "trailingUnderscore": "allow",
+        "custom": {
+          "regex": "^[a-zA-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "parameterProperty",
+        "format": [
+          "camelCase"
+        ],
+        "custom": {
+          "regex": "^[a-zA-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "classMethod",
+        "format": [
+          "camelCase"
+        ],
+        "custom": {
+          "regex": "^[a-zA-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "class",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "classProperty",
+        "format": [
+          "camelCase"
+        ],
+        "custom": {
+          "regex": "^[a-zA-Z_]+([a-zA-Z0-9_]+)?$",
+          "match": true
+        }
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/parsers": {
+      "require.resolve('@typescript-eslint/parser')": [
+        ".ts",
+        ".tsx",
+        ".d.ts"
+      ]
+    }
+  },
+  "ignorePatterns": [
+    "node_modules"
+  ]
+}

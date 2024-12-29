@@ -1,0 +1,18 @@
+ARG NODE_VERSION
+FROM node:${NODE_VERSION}
+
+ARG NPM_TOKEN
+ENV NPM_TOKEN=${NPM_TOKEN}
+
+ENV PROJECT_PATH=/home/node/app
+WORKDIR $PROJECT_PATH
+
+COPY --chown=node . .
+RUN echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+RUN npm install
+
+EXPOSE 3000
+
+USER node
+
+CMD ["npm", "start", "--", "--host"]
