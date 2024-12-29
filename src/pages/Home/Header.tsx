@@ -31,7 +31,7 @@ function ChangeLanguage() {
             theme: intl.state.locale === ELocales.PORTUGUESE ? 'DEFAULT' : 'tertiary',
           },
           {
-            label: { text: '🇬🇧', size: 'lg', isName: true },
+            label: { text: '🇺🇸', size: 'lg', isName: true },
             icon: intl.state.locale === ELocales.ENGLISH ? { icon: 'LuCheck' } : undefined,
             size: 'sm',
             button: { onClick: () => intl.changeLanguage(ELocales.ENGLISH) },

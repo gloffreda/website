@@ -22,7 +22,7 @@ const US = {
   FEATURED_TWO_DESCRIPTION:
     'Multidisciplinary developers in Brazil, ready to support a wide range of projects.',
   FEATURED_THREE_TITLE: 'Partners',
-  FEATURED_THREE_DESCRIPTION: 'Parceiros tecnológicos no Brasil, Estados Unidos e França.',
+  FEATURED_THREE_DESCRIPTION: 'technology partners in Brazil, the United States, and France.',
 };
 const BR = {
   MAIN_TITLE: 'A simplicidade é a sofisticação suprema.',

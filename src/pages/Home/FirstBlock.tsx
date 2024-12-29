@@ -22,7 +22,7 @@ export function FirstBlock() {
             <StyledPhrase text='MAIN_TITLE' breakLine />
             <Label breakLine theme='dark_gray' size='sm' text='MAIN_DESCRIPTION' />
             <div className='flex items-center justify-normal'>
-              <MetricInfo title='100+' description={'FIRST_METRIC'} />
+              <MetricInfo title='50+' description={'FIRST_METRIC'} />
               <HorizontalDivisor />
               <MetricInfo title='200+' description={'SECOND_METRIC'} />
             </div>

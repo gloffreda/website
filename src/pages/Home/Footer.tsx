@@ -17,11 +17,7 @@ export function Footer() {
           <Label text='CONTACT' theme='bright_gray' size='2xl' />
           <div className='flex gap-3'>
             <Label text='EMAIL' weight='light' theme='bright_gray' />
-            <Label text='abc@loffreda.com.br' weight='medium' theme='white' isName />
-          </div>
-          <div className='flex gap-3'>
-            <Label text='PHONE' weight='light' theme='bright_gray' />
-            <Label text='+1 11 123-321' weight='medium' theme='white' isName />
+            <Label text='talk@loffreda.com.br' weight='medium' theme='white' isName />
           </div>
         </div>
       </ContentContainer>
